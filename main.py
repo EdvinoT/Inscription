@@ -9,13 +9,21 @@ else:
     print ("Person not avaiable")
 print()
 
-def content():
-    print("Hi,",choice)
-    print("Hope you enjoy learning python with us!")
-    print()
-    print("Best,")
-    print("The 3l337 AP Computer Science Team")
-    return content()
+content = """
+Hi, {choice}
+Hope you enjoy learning python with us!
 
-file_inscrib= "inscribed.txt"
-with open(file_inscrib,"e" ) as file
+Best,
+The 3l337 AP Computer Science Team
+"""
+print(content.format(choice=choice))
+    
+
+if choice in people:
+    file_inscrib= "inscribed.txt"
+    with open (file_inscrib, 'w') as fp:
+        fp.write(str(content))
+else:
+    print("No file created")
+
+

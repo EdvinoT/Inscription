@@ -1,0 +1,6 @@
+
+Hi, {choice}
+Hope you enjoy learning python with us!
+
+Best,
+The 3l337 AP Computer Science Team
