@@ -10,19 +10,19 @@ else:
 print()
 
 content = """
-Hi, {choice}
+Hi, {}
 Hope you enjoy learning python with us!
 
 Best,
 The 3l337 AP Computer Science Team
 """
-print(content.format(choice=choice))
+print(content.format(choice))
     
 
 if choice in people:
     file_inscrib= "inscribed.txt"
     with open (file_inscrib, 'w') as fp:
-        fp.write(str(content))
+        fp.write(str(content.format(choice)))
 else:
     print("No file created")
 

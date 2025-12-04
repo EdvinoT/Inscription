@@ -1,5 +1,5 @@
 
-Hi, {choice}
+Hi, Ed
 Hope you enjoy learning python with us!
 
 Best,
